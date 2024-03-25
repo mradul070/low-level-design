@@ -7,6 +7,6 @@ public class GatewayFee extends AmountDecorator {
     }
     @Override
     public double calculateTotalAmount(double originalAmmount) {
-        return super.calculateTotalAmount(originalAmmount) + 1;
+        return paymentCalulation.calculateTotalAmount(originalAmmount) + 1;
     }
 }
