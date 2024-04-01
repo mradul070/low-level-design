@@ -7,6 +7,8 @@ public abstract class Game {
             // System.out.println(isGameOver());
             displayBoard();
             move();
+            boolean isGameOver = isGameOver();
+            if (isGameOver) break;
             takeTurn();
         }
         displayWinner();
